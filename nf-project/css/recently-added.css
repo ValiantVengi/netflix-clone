@@ -1,0 +1,133 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: white;
+  margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #e50914;
+  border-radius: 4px;
+}
+
+.navbar-user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Recently Added Banner Section */
+.recently-added-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #141414;
+  background-image: url('images/recently-added-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.recently-added-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recently-added-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.recently-added-info h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.recently-added-info p {
+  font-size: 1.5rem;
+}
+
+/* Recently Added Row Section */
+.recently-added-row {
+  padding: 20px;
+  margin-top: 80px; /* Adjust to prevent overlap with fixed navbar */
+}
+
+.recently-added-row h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.recently-added-list {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
+
+.recently-added-list img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recently-added-list img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+  padding: 10px;
+  background-color: #141414;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}

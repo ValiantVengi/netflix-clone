@@ -1,0 +1,177 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.navbar-user img {
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 50px;
+  background-color: #111;
+}
+
+.banner-img {
+  width: 200%;
+  height: 300%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-info {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  color: white;
+}
+
+.banner-info h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.banner-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.play-button, .info-button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.play-button:hover, .info-button:hover {
+  opacity: 0.8;
+}
+
+/* Movie Rows */
+.movie-row {
+  padding: 50px;
+  margin-top: 80px;
+}
+
+.movie-row h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.movie-list img {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.movie-list img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.faq {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+  }
+  
+  .faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e50914;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    background-color: #444;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #e50914;
+  }
+  
+  .faq-answer {
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+  }
+  
+  .faq-answer p {
+    font-size: 1rem;
+  }
+  
+  /* Show the answer when clicked */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
